@@ -1,0 +1,186 @@
+.post{
+
+    grid-column: center-start / center-end;
+    margin-top: -19px;
+    ul,li{
+        list-style: none;
+    }
+
+    &__info{
+
+        display: flex;
+        justify-content: center;
+        width: max-content;
+        margin: 32px auto;
+        border-bottom: 1px solid #5f5f5f70;
+        padding-bottom: 3px;
+        @media only screen and (max-width: 600px){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            width: 96%;
+        }
+    
+        &-icon:first-child{
+            margin: 0;
+        }
+        &-icon{
+            display: flex;
+            align-items: center;
+            margin-right: 55px;
+            @media only screen and (max-width: 600px){
+                 display: grid;
+                 justify-items: center;
+                 margin-right: 0;
+            }
+          
+            img{
+                width: 45px;
+                height: 45px;
+                @media only screen and (max-width: 600px){
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            span,a{
+                color: #5f5f5f;
+                font-size: 1.8rem;
+                @media only screen and (max-width: 600px){
+                    font-size: 1rem;
+                }
+                text-decoration: none;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+            a:hover{
+
+                text-decoration: underline;
+                text-decoration-color: $primary-color;
+            }
+
+        }
+
+    }
+
+    &__article{
+        width: 65%;
+        @media only screen and (max-width: 600px){
+            width: 90%;
+        }
+        margin: 20px auto;
+        font-size: 2rem;
+        color: #5f5f5f;
+        background-color: #fbfbfb;
+        padding: 20px;
+        box-shadow: 1px 1px 6px 1px #0000002b;
+
+        p{
+
+            padding-bottom: 20px;
+            line-height: 32px;
+        }
+
+        a{
+            color: #016f56;
+        }
+
+        li{
+
+            figure{
+                padding:0 5px;
+            }
+
+            img{
+                border-radius:4px;
+            }
+        }
+
+    }
+
+    &__cards{
+        width: 65%;
+        @media only screen and (max-width: 600px){
+            width: 90%;
+        }
+        margin: 20px auto;
+
+        &-title{
+
+            font-size: 2.1rem;
+            color: $secondary-color;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 119px;
+                background-color: #56cbb3;
+                display: block;
+                height: 18px;
+                border-radius: 4px;
+                top: 12px;
+                z-index: -3;
+            
+            }
+            ul{display: inline-block;}
+            a{
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+
+        &-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            @media only screen and (max-width:880px){
+                grid-template-columns: 1fr;
+                justify-items: center;
+                row-gap: 10px;
+
+            }
+            column-gap: 18px;
+            margin-top: 25px;
+        }
+
+        img{
+
+            width: 100%;
+            @media only screen and (max-width:880px){
+                width: 250px;
+
+            }
+            height: 150px;
+            
+        }
+
+      
+    }
+
+    &__card{
+            text-align: center;
+            border-radius: 6px;
+            overflow: auto;
+            background-color: #F0EEEE;
+            box-shadow: 0 2px 4px 1px #00000036;
+            @media only screen and (max-width:880px){
+                width: 250px;
+            }
+            &-title{
+                h3{
+                    font-size: 1.6rem;
+                    padding: 6px 9px;
+                    padding-bottom: 14px;
+
+                    a{
+                        color: #5f5f5f;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                            text-decoration-color: $primary-color;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+}

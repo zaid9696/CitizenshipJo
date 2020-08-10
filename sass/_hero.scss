@@ -1,0 +1,73 @@
+.hero{
+
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: [full-start] minmax(2rem,1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-start]) [center-end] minmax(2rem, 1fr) [full-end];
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+        &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right top, rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    }
+
+    &__container{
+        grid-column: center-start / center-end;
+        position: relative;
+        z-index: 44;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        p{
+            color: #fff;
+            font-size: 2.6rem;
+            text-align: center;
+            background: #292727bf;
+            padding: 1rem 15px;
+            font-weight: 300;
+            margin: 1px 16rem;
+            border-radius: 8px;
+           
+            @media only screen and (max-width:830px){
+               margin: 1px 5rem;
+             }
+            @media only screen and (max-width:570px){
+                margin: 1px 0rem;
+                font-size: 1.9em;
+             }
+        }
+    }
+
+    &__title{
+        font-size: 4.4rem;
+        color: white;
+        margin-bottom: 83px;
+        position: relative;
+        text-align: center;
+        line-height: 4.4rem;
+        top: 66px;
+     
+        
+        @media only screen and (max-width:830px){
+            text-align: center;
+            padding: 0 60px;
+         }
+        @media only screen and (max-width:570px){
+            text-align: center;
+            padding: 0 0;
+            font-size: 3rem;
+         }
+        span{
+            color: $primary-color;
+        }
+    }
+   
+
+}

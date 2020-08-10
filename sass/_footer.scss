@@ -1,0 +1,114 @@
+.footer{
+
+
+    grid-column: full-start / full-end;
+    background-color: #080810;
+    padding-top: 21px;
+    &__info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        direction: ltr;
+        border-bottom: 1px solid #1ac1c72e;
+        padding-bottom: 7px;
+        @media only screen and (max-width:590px){
+            flex-direction: column;
+            align-items: self-end;
+        }
+    
+        &-icon{
+
+            display: flex;
+            margin-left: 76px;
+            @media only screen and (max-width:760px){
+                margin-left: 20px;
+             }
+            @media only screen and (max-width:590px){
+                margin-left: 20px;
+                margin-bottom: 11px;
+             }
+
+             img{
+                @media only screen and (max-width:590px){
+                    width: 1.5rem;
+                 }
+             }
+            span{
+
+                color: aquamarine;
+                font-size: 2rem;
+                @media only screen and (max-width:590px){
+                    font-size: 1.5rem;
+                 }
+                margin-left: 5px;
+                &.span-last{
+                    margin-left: 10px;
+                }
+            }
+
+            
+        }
+
+    }
+
+    &__more{
+        display: grid;
+    grid-template-columns: [full-start] minmax(2rem,1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-start]) [center-end] minmax(2rem, 1fr) [full-end];
+    padding-top: 23px;
+    padding-bottom: 23px;
+
+        &-copy{
+            font-size: 1.5rem;
+            color: #9da3a9;
+            font-weight: 100;
+            direction: rtl;
+            align-self: center;
+            @media only screen and (max-width:590px){
+                font-size: 1rem;
+    
+            }
+        }
+        &-zaid{
+            font-size: 1.6rem;
+            @media only screen and (max-width:590px){
+                font-size: 1rem;
+    
+            }
+            color: #9da3a9ad;
+            font-weight: 100;
+            letter-spacing: 1px;
+            justify-self: self-end;
+            align-self: center;
+            a{
+                color: #255850;
+                text-decoration: none;
+                font-weight: 500;
+                text-transform: uppercase;
+                transition: all 0.4s ease-in-out;
+                &:hover{
+                    color: #1ae6c6;
+                }
+            }
+        }
+    }
+
+    &__container{
+
+        grid-column: center-start / center-end;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media only screen and (max-width:590px){
+            grid-template-columns: 1fr 2fr 1fr;
+
+        }
+        justify-items: center;
+        direction: ltr;
+      
+    }
+   
+
+}
+
+.zoom-social_icons-list__item{
+    margin-left: 8px !important;
+}

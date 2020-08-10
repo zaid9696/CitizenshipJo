@@ -1,0 +1,33 @@
+.page{
+
+    grid-column: center-start / center-end;
+
+    &__title{
+        font-size: 5rem;
+        text-align: center;
+        color: #606060;
+        margin-top: 3rem;
+    }
+
+    &__content{
+
+        padding: 3rem;
+        color: #606060;
+
+        p{
+            font-size: 2rem;
+        }
+    }
+
+    &__thumbnail{
+
+        grid-column: full-start / full-end;
+        margin-top: 104px;
+        height: 530px;
+        background-size: cover;
+        background-position: center;
+
+        
+    }
+    
+}

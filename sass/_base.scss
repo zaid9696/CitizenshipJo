@@ -1,0 +1,52 @@
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+
+$primary-color:#7FFFD4;
+$secondary-color:#5F5F5F;
+$third-color:#F0EEEE;
+
+$english-font:'Roboto', sans-serif;
+
+
+
+html{
+
+    font-family: 'Tajawal', sans-serif;
+    font-size: 62.2%;
+    box-sizing: border-box;
+ 
+    @media only screen and (max-width: 1000px){
+        font-size: 50%;
+    }
+    
+
+}
+
+
+
+body{
+
+    display: grid;
+    grid-template-columns: [full-start] minmax(2rem,1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-start]) [center-end] minmax(2rem, 1fr) [full-end];
+    // overflow-x: hidden;
+    
+}
+
+.n2-section-smartslider{
+
+    grid-column: full-start / full-end;
+    
+}
+
+.n2-ss-widget{
+    
+    background: #000000b5;
+    padding: 5px;
+    border-radius: 25px;
+}
