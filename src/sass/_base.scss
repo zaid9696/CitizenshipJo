@@ -1,0 +1,53 @@
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+
+$primary-color: #00577F;
+$secondary-color: #F5776E;
+$third-color: #4F4F4F;
+$bg-color: #2A3558;
+$pro-color: #513264;
+$article-color: #ffa822;
+$podcast-color: #F5776E;
+$youtube-color: #FF0000;
+$footer-color: #262F4F;
+
+html{
+
+    font-family: 'Tajawal', sans-serif;
+    font-size: 62.2%;
+    // overflow-x: hidden;
+    @media screen and (max-width: 989px) {
+        
+        font-size: 50%;
+    }
+    box-sizing: border-box;
+
+   
+    
+
+}
+
+
+body{
+
+    display: grid;
+    grid-template-columns: [full-start] minmax(2rem,1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-start]) [center-end] minmax(2rem, 1fr) [full-end];
+}
+
+.main {
+
+    grid-column: full-start / full-end;
+}
+
+.container-z {
+    display: grid;
+    grid-template-columns: [full-start] minmax(2rem,1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-start]) [center-end] minmax(2rem, 1fr) [full-end];
+}
+
+ul,li {list-style: none;}

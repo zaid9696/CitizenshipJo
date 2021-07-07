@@ -1,0 +1,65 @@
+.partners {
+
+	grid-column: center-start / center-end;
+	position: relative;
+    top: -7px;
+    z-index: 3;
+    background-color: #fff;
+	&__header {
+    	display: flex;
+    	padding: 17px;
+    	align-items: center;
+    	justify-content: center;
+    	h2 {
+    		font-size: 3.4rem;
+    		color: $third-color;
+    		margin-bottom: 22px;
+            margin-right: 9px;
+    		margin-left: 9px;
+    	}
+
+    	&-icon {
+    		img {
+    			width: 65px;
+    		}
+    	}
+		  &-line {
+            width: 97%;
+              @media (max-width: 500px) {
+            width: 90%;
+        }
+            height: 1px;
+            background-color: #afcad7;
+            position: absolute;
+            top: 104px;
+        }
+
+    	
+   
+    	}
+
+        &__content {
+                width: 150px;
+                margin: auto;
+                margin-top: 5px;
+                 margin-bottom: 5px;
+                 transition: all 0.5s ease-in-out;
+                &:hover {
+                    box-shadow:  0px 0px 8px 0px #00000030;
+                    transform: translateY(-3px);
+                }
+            img {
+                height: 150px;
+            }
+        }
+
+        &__wrap.owl-loaded {
+            direction: ltr;
+            display: grid;
+        }
+        .owl-two {
+            position: relative;
+            top: -18px;
+        }
+  
+}

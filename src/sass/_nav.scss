@@ -1,0 +1,66 @@
+.nav{
+
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: 170px 1fr 100px;
+    @media (max-width: 845px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    } 
+   &__logo {
+    width: 150px;
+    margin: auto;
+   		img {
+   			width: 100%;
+   		}
+   }
+
+   &__search {
+   		display: flex;
+    	align-items: center;
+    	margin-top: 20px;
+      cursor: pointer;
+      @media (max-width: 845px) {
+        justify-content: flex-end;
+      }
+    	img{
+    		width: 44px;
+    	}
+   }
+    
+}
+
+.custom-wordpres-dropdown{
+	    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    .menu-header-menu-container,.menu-header-menu-english-container {
+    	width: 100%;
+    }
+
+    #menu-header-menu, #menu-header-menu-english {
+    	display: flex;
+    	width: 100%;
+    	justify-content: space-around;
+
+    	li {
+    		margin-left: 5px;
+        &.current-menu-item {
+          border-bottom: 2px solid $secondary-color;
+          
+        }
+    	}
+
+    	a {
+    		color: $primary-color;
+		    font-size: 2.4rem;
+		    font-weight: 600;
+        text-decoration: none;
+        border-bottom: 0px solid transparent;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          border-bottom: 2px solid $secondary-color;
+        }
+    	}
+    }
+}

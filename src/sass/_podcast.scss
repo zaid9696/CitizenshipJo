@@ -1,0 +1,134 @@
+.podcast {
+
+	grid-column: center-start / center-end;
+	// height: 1000px;
+	position: relative;
+    top: -63px;
+    z-index: 3;
+    background-color: #fff;
+
+    &__header {
+    	display: flex;
+    	padding: 17px;
+    	align-items: center;
+    	h2 {
+    		font-size: 3.4rem;
+    		color: $third-color;
+    		margin-bottom: 22px;
+    		margin-right: 0px;
+    	}
+
+    	&-line {
+    		width: 97%;
+              @media (max-width: 500px) {
+            width: 90%;
+        }
+		    height: 1px;
+		    background-color: #f5776e70;
+		    position: absolute;
+		    top: 104px;
+    	}
+
+   
+    	}
+
+    	&__content {
+    		display: grid;
+    		grid-template-columns: 1fr 1fr 1fr;
+    		gap: 40px;
+    		margin-top: 20px;
+            @media (max-width: 925px) {
+            grid-template-columns: 1fr 1fr;
+            }
+
+            @media (max-width: 560px) {
+            grid-template-columns: 1fr;
+            }
+    		a {
+    			color: $podcast-color;
+    			text-decoration: none;
+    			&:hover {
+    				text-decoration: underline;
+    				text-decoration-color: $secondary-color;
+    			}
+    		}
+    		span {color: $podcast-color;}
+    		&-card {
+    			border-radius: 6px;
+			    overflow: hidden;
+			    box-shadow: 0px 0px 9px 2px #00000026;
+    		}
+
+    		&-wrap {
+    			padding: 15px;
+    		}
+
+	        &-cover {
+	        	height: 250px;
+                 @media (max-width: 500px) {
+                height: 200px;
+            }
+	        }
+    		img {
+
+    			height: 100%;
+	            width: 100%;
+	            object-fit: cover;
+	            object-position: 0 0;
+	        }
+
+	        h3 {
+	        	font-size: 2rem;
+    			margin: 1rem 0;
+    			a{color: $third-color;}
+	        }
+
+	        &-category {
+	        	span {
+	        		font-size: 1.5rem;
+    				font-weight: 300;
+	        	}
+	        }
+
+	        &-date {
+	        	font-size: 1.3rem;
+			    font-weight: 300;
+			    margin-top: 1rem;
+			    border-top: 1px solid #f5776e70;
+    			padding-top: 5px;
+	        }
+
+
+    }
+
+    &__more {
+
+    	text-align: center;
+    	margin-top: 3rem;
+    	a {
+    		display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    font-size: 2.7rem;
+		    font-weight: 800;
+		    text-decoration: none;
+		    color: $podcast-color;
+		    width: fit-content;
+		    margin: auto;
+		    transition: all 0.2s ease-in-out;
+		    &:hover {
+		    	border-bottom: 2px solid $secondary-color;
+
+		    }
+		    img {
+		    	width: 45px;
+                margin-right: 1rem;
+			    margin-left: 1rem;
+			    position: relative;
+			    top: 5px;
+		    }
+    	}
+    }
+
+  }
+
