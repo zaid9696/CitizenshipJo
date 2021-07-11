@@ -1,4 +1,5 @@
 # CitizenshipJo
 
-
-Wordpress Theme for a none-profit organization
+Citizenship is a Jordanian non-profit
+organization, I designed and developed it 
+from scratch with WordPress.
